@@ -1,0 +1,16 @@
+version: "0"
+name: filter-example
+services:
+  develop:
+    image: vainilla-ts/dev
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: filter-example
+    volumes:
+      - .:/app
+      - ./src:/app
+      - ./public:/app
+      - ./node_modules:/app
+    ports:
+      - 5521:5173

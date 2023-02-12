@@ -1,0 +1,74 @@
+:root {
+  font-family: "Raleway", Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  border: 1px solid white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.left-menu {
+  background-color: darkolivegreen;
+  padding: 10px;
+}
+
+.right-pane {
+  background-color: darkgreen;
+  width: 100%;
+}
+
+.categories-names a {
+  color: white;
+}
+
+.slider {
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.grid-item img {
+  width: 200px;
+}
