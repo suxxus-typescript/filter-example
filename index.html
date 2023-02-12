@@ -19,20 +19,25 @@
   <body>
     <div class="container">
       <div class="left-menu">
-        <input type="text" class="search-item" />
+        <form class="search-item">
+          <input id="search" type="text" placeholder="search item" autofocus />
+        </form>
         <h2>Categories</h2>
         <ul class="categories-names">
           <li>
-            <a href="#">Dress</a>
+            <a href="#">all</a>
           </li>
           <li>
-            <a href="#">Sport</a>
+            <a href="#">dress</a>
           </li>
           <li>
-            <a href="#">Luxury</a>
+            <a href="#">sport</a>
           </li>
           <li>
-            <a href="#">Casual</a>
+            <a href="#">luxury</a>
+          </li>
+          <li>
+            <a href="#">casual</a>
           </li>
         </ul>
         <div class="range-selector">
@@ -50,15 +55,18 @@
           </div>
         </div>
       </div>
-      <div class="right-pane">
+      <div class="right-pane" style="display: block">
+        <div class="loading-spinner lds-roller spinner"></div>
         <ul class="grid-container">
           <li class="grid-item">
-            <img
-              src="https://cdn.pixabay.com/photo/2017/05/12/15/16/hexagon-2307350__340.png"
-              alt="img"
-            />
-            <p>product name</p>
-            <p class="product-price">50$</p>
+            <a href="#">
+              <img
+                src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/91CsjJfQfkL._AC_UL320_.jpg"
+                alt="img"
+              />
+              <p>product name</p>
+              <p class="product-price">50$</p>
+            </a>
           </li>
           <li class="grid-item">
             <img
