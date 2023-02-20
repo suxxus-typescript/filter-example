@@ -19,96 +19,54 @@
   <body>
     <div class="container">
       <div class="left-menu">
-        <form class="search-item">
-          <input id="search" type="text" placeholder="search item" autofocus />
+        <form action="#">
+          <input
+            id="searchByTitle"
+            type="text"
+            placeholder="search item"
+            autofocus
+          />
+          <ul id="availableProducts" name="prodcuts"></ul>
         </form>
         <h2>Categories</h2>
         <ul class="categories-names">
           <li>
-            <a href="#">all</a>
+            <a id="all" href="#">all</a>
           </li>
           <li>
-            <a href="#">dress</a>
+            <a id="smartphones" href="#">Smartphones</a>
           </li>
           <li>
-            <a href="#">sport</a>
+            <a id="laptops" href="#">Laptops</a>
           </li>
           <li>
-            <a href="#">luxury</a>
+            <a id="fragrances" href="#">Fragrances</a>
           </li>
           <li>
-            <a href="#">casual</a>
+            <a id="groceries" href="#">Groceries</a>
+          </li>
+          <li>
+            <a id="home-decoration" href="#">Home decoration</a>
           </li>
         </ul>
+
         <div class="range-selector">
           <h3>Maximun Price</h3>
           <div class="price-range-selector">
-            <input
-              type="range"
-              min="1"
-              max="100"
-              value="50"
-              class="slider"
-              id="myRange"
-            />
-            <span>100$</span>
+            <input type="range" step="10" class="slider" id="priceInput" />
+            <span>$</span><span id="selectedPrice"></span>
           </div>
         </div>
       </div>
-      <div class="right-pane" style="display: block">
+      <div class="right-pane">
+        <div class="product-popup">
+          <div class="product-popup__ctrls">
+            <button class="product-popup__exit">x</button>
+          </div>
+          <div class="product-popup__container"></div>
+        </div>
         <div class="loading-spinner lds-roller spinner"></div>
-        <ul class="grid-container">
-          <li class="grid-item">
-            <a href="#">
-              <img
-                src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/91CsjJfQfkL._AC_UL320_.jpg"
-                alt="img"
-              />
-              <p>product name</p>
-              <p class="product-price">50$</p>
-            </a>
-          </li>
-          <li class="grid-item">
-            <img
-              src="https://cdn.pixabay.com/photo/2017/05/12/15/16/hexagon-2307350__340.png"
-              alt="img"
-            />
-            <p>product name</p>
-            <p class="product-price">50$</p>
-          </li>
-          <li class="grid-item">
-            <img
-              src="https://cdn.pixabay.com/photo/2017/05/12/15/16/hexagon-2307350__340.png"
-              alt="img"
-            />
-            <p>product name</p>
-            <p class="product-price">50$</p>
-          </li>
-          <li class="grid-item">
-            <img
-              src="https://cdn.pixabay.com/photo/2017/05/12/15/16/hexagon-2307350__340.png"
-              alt="img"
-            />
-            <p>product name</p>
-            <p class="product-price">50$</p>
-          </li>
-          <li class="grid-item">
-            <img
-              src="https://cdn.pixabay.com/photo/2017/05/12/15/16/hexagon-2307350__340.png"
-              alt="img"
-            />
-            <p>product name</p>
-            <p class="product-price">50$</p>
-          </li>
-          <li class="grid-item">
-            <img
-              src="https://cdn.pixabay.com/photo/2017/05/12/15/16/hexagon-2307350__340.png"
-              alt="img"
-            />
-            <p>product name</p>
-            <p class="product-price">50$</p>
-          </li>
-        </ul>
+        <ul class="grid-container"></ul>
       </div>
     </div>
     <script type="module" src="/src/main.ts"></script>

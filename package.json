@@ -15,6 +15,7 @@
     "postisntall": "husky install"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.191",
     "@types/sanitize-html": "^2.8.0",
     "@typescript-eslint/eslint-plugin": "^5.49.0",
     "@typescript-eslint/parser": "^5.49.0",
